@@ -1,5 +1,13 @@
+import Fetch from './components/fetch/Fetch';
+
 const App = () => {
-	return <h1>Núcleo de la aplicación</h1>;
+	return (
+		<>
+			{/* <Effect /> */}
+			<Fetch />
+			{/* <Timer /> */}
+		</>
+	);
 };
 
 export default App;
