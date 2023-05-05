@@ -11,11 +11,13 @@ const Fetch = () => {
 
 	useEffect(() => {
 		const controller = new AbortController();
+
 		fetchData(
 			'https://jsonplaceholder.typicode.com/users',
 			controller.signal,
 			setData
 		);
+
 		return () => controller.abort();
 	}, []);
 

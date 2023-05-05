@@ -1,10 +1,11 @@
-import Fetch from './components/fetch/Fetch';
+import Intersection from './components/intersection/Intersection';
 
 const App = () => {
 	return (
 		<>
+			<Intersection />
 			{/* <Effect /> */}
-			<Fetch />
+			{/* <Fetch /> */}
 			{/* <Timer /> */}
 		</>
 	);

@@ -3,12 +3,11 @@ import { useEffect, useState } from 'react';
 const Effect = () => {
 	const [count, setCount] = useState(0);
 
-	console.log('Render, antes de useEffect');
-
 	useEffect(() => {
-		console.log('useEffect');
+		window.addEventListener('scroll', handleResize);
+
+		return () => window.removeEventListener('scroll', handleResize);
 	});
-	console.log('Render, después de useEffect');
 
 	return (
 		<div>
@@ -32,5 +31,7 @@ const Effect = () => {
 		</div>
 	);
 };
+
+const handleResize = () => console.log('RESIZE');
 
 export default Effect;
