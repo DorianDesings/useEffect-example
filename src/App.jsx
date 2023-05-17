@@ -1,12 +1,13 @@
-import Intersection from './components/intersection/Intersection';
+import Form from './components/form/Form';
 
 const App = () => {
 	return (
 		<>
-			<Intersection />
+			{/* <Intersection /> */}
 			{/* <Effect /> */}
 			{/* <Fetch /> */}
 			{/* <Timer /> */}
+			<Form />
 		</>
 	);
 };
